@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="cookBookApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>EX01</title>
+</head>
+<body ng-controller="MainController">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+<g>
+    <circle style="stroke: #CCC; fill: #FFF;" cx="100" cy="100" r="100"/>
+    <line x1="100" y1="100" x2="100" y2="50" style="stroke-width: 5px; stroke: #333;" ng-attr-transform="rotate({{ hourRotation }} 100 100)"></line>
+    <line x1="100" y1="100" x2="100" y2="20" style="stroke-width: 3px; stroke: #888;" ng-attr-transform="rotate({{ minuteRotation }} 100 100)"></line>
+    <line x1="100" y1="100" x2="100" y2="5" style="stroke-width: 2px; stroke: #BB0000;" ng-attr-transform="rotate({{ secondRotation }} 100 100)"></line>
+</g>
+</svg>
+<script src="bower_components/angularjs/angular.min.js"></script>
+<script src="js/ex01.js"></script>
+</body>
+</html>
