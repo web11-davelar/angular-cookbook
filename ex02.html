@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Exercicio 2</title>
+<html ng-app="cookbookApp">
+<head>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
 </head>
-<body ng-controller="MainController">
+<body ng-controller="MainController" class="container">
+	<dateselect model="current"></dateselect><br/>
 
-<dateselect	model="current"></dateselect><br>
-<dateselect	model="current"></dateselect><br>
-
-{{ current | date: 'yyyy-MM-dd' }}
-
-<script src="bower_components/angularjs/angular.min.js"></script>
-<script src="js/ex02.js"></script>
+<div class="col-lg-12 well">
+	{{current | date:'dd-MM-yyyy'}}
+	</div>
+	<script src="bower_components/angularjs/angular.min.js"></script>
+	<script src="js/ex02.js"></script>
 </body>
 </html>
